@@ -1,9 +1,11 @@
-import { Header } from "./Header";
+import React from "react";
+import { Background } from "./Background";
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className="h-screen w-[100%]">
+      <Background/>
     </div>
   );
 }
