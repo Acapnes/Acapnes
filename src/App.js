@@ -10,9 +10,11 @@ function App() {
     <div className="h-full w-[100%] pb-10">
       <Background />
       <div className="h-full grid grid-rows">
-        <Acapnes/>
-        <Projects />
-        <Git />
+        <Acapnes />
+        <div className="h-full grid xl:lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+          <Projects />
+          <Git />
+        </div>
       </div>
     </div>
   );

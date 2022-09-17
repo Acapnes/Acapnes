@@ -12,14 +12,14 @@ export const Acapnes = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-3 lg:gap-6 md:gap-6 gap-2 pt-10">
           <a
             href="https://github.com/Acapnes/"
-            className="border-4 py-2 px-5 rounded-full border-stone-500 items-center flex flex-row space-x-3 hover:bg-stone-600 hover:bg-opacity-70 hover:border-stone-400"
+            className="border-4 py-2 px-5 rounded-full border-stone-500 items-center flex flex-row space-x-3 transition-opacity ease-in-out duration-700 opacity-60  hover:opacity-100"
           >
             <img src="/assets/github.svg" />
             <p className="text-[1.5rem]">GitHub</p>
           </a>
           <a
             href="https://linkedin.com/in/acapnes/"
-            className="border-4 py-2 px-5 rounded-full border-stone-500 items-center flex flex-row space-x-3 hover:bg-stone-600 hover:bg-opacity-70 hover:border-stone-400"
+            className="border-4 py-2 px-5 rounded-full border-stone-500 items-center flex flex-row space-x-3 transition-opacity ease-in-out duration-700 opacity-60  hover:opacity-100"
           >
             <img src="/assets/linkedin.svg" />
             <p className="text-[1.5rem]">LinkedIn</p>
@@ -27,12 +27,15 @@ export const Acapnes = () => {
 
           <a
             href="https://instagram.com/pbmsss/"
-            className="border-4 py-2 px-5 rounded-full border-stone-500 flex flex-row space-x-3 hover:bg-stone-600 hover:bg-opacity-70 hover:border-stone-400"
+            className="border-4 py-2 px-5 rounded-full border-stone-500 items-center flex flex-row space-x-3 transition-opacity ease-in-out duration-700 opacity-60  hover:opacity-100"
           >
             <img src="/assets/instagram.svg" />
             <p className="text-[1.5rem]">Instagram</p>
           </a>
         </div>
+        <button className="pt-14 animate-bounce">
+          <img src="/assets/arrowdown.svg" />
+        </button>
       </div>
       <div>
         <a
@@ -44,7 +47,6 @@ export const Acapnes = () => {
             className="w-[60%] h-[60%] rounded-full"
           />
         </a>
-        <div class="h-8 w-8 bg-blue-600 transition-opacity ease-in-out duration-700 opacity-50  light:opacity-100"></div>
       </div>
     </div>
   );
