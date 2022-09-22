@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Projects } from "./Projects";
-import { Background } from "./Background";
-import { Git } from "./Git";
-import { Acapnes } from "./Acapnes";
+import { Projects } from "./components/Projects";
+import { Background } from "./components/Background";
+import { Git } from "./components/Git";
+import { Acapnes } from "./components/Acapnes";
 
 function App() {
   return (
@@ -11,10 +11,8 @@ function App() {
       <Background />
       <div className="h-full grid grid-rows">
         <Acapnes />
-        <div className="h-full grid xl:lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
-          <Projects />
-          <Git />
-        </div>
+        {/* <Projects /> */}
+        <Git />
       </div>
     </div>
   );
