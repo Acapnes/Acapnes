@@ -3,8 +3,8 @@ import React from "react";
 
 export const Projects = () => {
   return (
-    <div className="px-8 grid grid-rows h-fit lg:sticky top-5">
-      <div className="pb-2 text-white text-4xl font-bold items-center flex justify-center border-b-2 border-white mb-5">Completed Projects</div>
+    <div className="px-8 grid grid-rows h-fit">
+      <div className="pb-2 text-white text-4xl font-bold items-center flex justify-center border-b-2 border-white mb-5">Projects</div>
       <div className="p-8 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 items-center text-white hover:bg-gray-900 hover:bg-opacity-50">
         <div className="flex flex-col">
           <p className="text-3xl font-semibold text-stone-500">Andruil Bot</p>
