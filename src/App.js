@@ -11,7 +11,7 @@ function App() {
       <Background />
       <div className="h-full grid grid-rows">
         <Acapnes />
-        {/* <Projects /> */}
+        <Projects />
         <Git />
       </div>
     </div>
