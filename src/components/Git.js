@@ -37,7 +37,7 @@ export const Git = () => {
               before:duration-300 before:content-[''] hover:text-white hover:border-white before:hover:scale-y-100"
                   key={repoIndex}
                 >
-                  <p className="w-fit font-bold text-lg underline">
+                  <p className="w-3/4 font-bold text-lg underline">
                     {repo.name}
                   </p>
                   <p className="h-fit w-[68%]">{repo.description}</p>
