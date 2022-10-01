@@ -15,7 +15,7 @@ export const Git = () => {
   }, []);
 
   return (
-    <div className="px-8 grid grid-rows h-fit">
+    <div className="px-8 grid grid-rows min-h-screen h-fit">
       <div className="pb-2 text-white text-4xl font-bold items-center flex justify-center border-b-2 border-white mb-5">
         GitHub
       </div>
