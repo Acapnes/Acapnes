@@ -2,13 +2,13 @@
 
 ##
 
-![](readme/acapnes.png)
+![](public/readme/acapnes.png)
 
 ##
 
-![](readme/projects.png)
+![](public/readme/projects.png)
 
 ##
 
-![](readme/github.png)
+![](public/readme/github.png)
 
