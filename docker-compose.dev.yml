@@ -1,0 +1,7 @@
+version: '3'
+services:
+  frontend:
+    image: acapnes_blog
+    build: .
+    ports:
+      - "3000:3000"
