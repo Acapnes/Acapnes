@@ -4,4 +4,4 @@ services:
     image: acapnes_blog
     build: .
     ports:
-      - "80:3000"
+      - "1500:1500"
