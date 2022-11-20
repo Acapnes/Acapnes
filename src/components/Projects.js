@@ -11,7 +11,7 @@ export const Projects = () => {
       <div className="w-full py-4 lg:px-10 md:px-5 grid grid-cols-1 xl:grid-cols-2 gap-10 place-items-center mb-8">
         <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
           <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg space-y-1 bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
+            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
               <p className="font-bold text-xl">Anduril BOT</p>
               <p>
                 Moderation & Music discord bot with Lord of The Rings themes.

@@ -23,7 +23,7 @@ export const Git = () => {
         {repos &&
           repos.map((repo, repoIndex) => (
             <a
-              href="#_"
+              href={repo.html_url}
               className="relative inline-block px-4 py-2 font-medium group"
               key={repoIndex}
             >
