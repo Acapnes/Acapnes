@@ -4,7 +4,7 @@ export const Background = () => {
   return (
     <video
       // className="w-[100%] h-[100%] object-cover absolute top-0 left-0"
-      src="/assets/bgloop.mp4"
+      src="./assets/bgloop.mp4"
       autoPlay
       loop
       muted

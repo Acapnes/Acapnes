@@ -76,7 +76,7 @@ export const Acapnes = () => {
           smooth={true}
           className=" animate-bounce cursor-pointer"
         >
-          <img src="/assets/arrowdown.svg" alt="arrowdown" />
+          <img src="./assets/arrowdown.svg" alt="arrowdown" />
         </Link>
       </div>
       <div className="items-center flex justify-center">
