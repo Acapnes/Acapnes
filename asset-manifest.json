@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Acapnes/static/css/main.bb4c7d68.css",
-    "main.js": "/Acapnes/static/js/main.40b44dc7.js",
+    "main.js": "/Acapnes/static/js/main.2d3720ae.js",
     "index.html": "/Acapnes/index.html",
     "main.bb4c7d68.css.map": "/Acapnes/static/css/main.bb4c7d68.css.map",
-    "main.40b44dc7.js.map": "/Acapnes/static/js/main.40b44dc7.js.map"
+    "main.2d3720ae.js.map": "/Acapnes/static/js/main.2d3720ae.js.map"
   },
   "entrypoints": [
     "static/css/main.bb4c7d68.css",
-    "static/js/main.40b44dc7.js"
+    "static/js/main.2d3720ae.js"
   ]
 }
