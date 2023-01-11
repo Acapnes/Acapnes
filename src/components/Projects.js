@@ -23,7 +23,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="/assets/discord_bot.png"
+                src="./assets/discord_bot.png"
                 className="w-[10rem] md:w-[12rem] object-cover md:rounded-r-sm"
               />
             </div>
@@ -46,7 +46,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="Acapnes/assets/lost_mj.png"
+                src="./assets/lost_mj.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
@@ -74,7 +74,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/dieator.png"
+                src="./assets/dieator.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
@@ -106,7 +106,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/pictopia.png"
+                src="./assets/pictopia.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm bg-gray-200"
               />
             </div>
@@ -131,7 +131,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/car_dealer.png"
+                src="./assets/car_dealer.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
@@ -158,7 +158,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/chat_app.png"
+                src="./assets/chat_app.png"
                 className="w-[14rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
@@ -185,7 +185,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/transfer.png"
+                src="./assets/transfer.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
@@ -211,7 +211,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/dashboard.jpg"
+                src="./assets/dashboard.jpg"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>

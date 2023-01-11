@@ -4,7 +4,6 @@ import { Projects } from "./components/Projects";
 import { Background } from "./components/Background";
 import { Git } from "./components/Git";
 import { Acapnes } from "./components/Acapnes";
-import { useRef } from "react";
 
 function App() {
   return (
