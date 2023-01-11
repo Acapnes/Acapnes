@@ -46,7 +46,7 @@ export const Projects = () => {
             </div>
             <div className="flex items-center justify-center ">
               <img
-                src="/assets/lost_mj.png"
+                src="Acapnes/assets/lost_mj.png"
                 className="w-[10rem] h-full object-cover md:rounded-r-sm"
               />
             </div>
