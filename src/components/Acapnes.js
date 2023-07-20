@@ -71,7 +71,7 @@ export const Acapnes = () => {
         </div>
 
         <Link
-          to="projects"
+          to="main"
           spy={true}
           smooth={true}
           className=" animate-bounce cursor-pointer"

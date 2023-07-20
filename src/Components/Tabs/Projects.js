@@ -1,13 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
-export const Projects = () => {
+const Projects = () => {
   return (
-    <div className="px-8 grid grid-cols-1 min-h-screen h-fit mt-5">
-      <div className="pb-2 text-white text-4xl font-bold items-center flex justify-center border-b-2 border-white mb-5">
-        Projects
-      </div>
-
+    <div className="grid grid-cols-1">
       <div className="w-full py-4 lg:px-10 md:px-5 grid grid-cols-1 xl:grid-cols-2 gap-10 place-items-center mb-8">
         <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
           <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
@@ -221,3 +217,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export default Projects;

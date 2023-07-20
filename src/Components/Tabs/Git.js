@@ -3,7 +3,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-export const Git = () => {
+const Git = () => {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
@@ -15,10 +15,7 @@ export const Git = () => {
   }, []);
 
   return (
-    <div className="px-8 grid grid-rows min-h-screen h-fit">
-      <div className="pb-2 text-white text-4xl font-bold items-center flex justify-center border-b-2 border-white mb-5">
-        GitHub
-      </div>
+    <div className="grid grid-rows min-h-screen h-fit">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
         {repos &&
           repos.map((repo, repoIndex) => (
@@ -73,3 +70,5 @@ export const Git = () => {
     </div>
   );
 };
+
+export default Git;

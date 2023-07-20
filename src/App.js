@@ -1,20 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Projects } from "./components/Projects";
-import { Background } from "./components/Background";
-import { Git } from "./components/Git";
-import { Acapnes } from "./components/Acapnes";
+import { Acapnes } from "./Components/Acapnes";
+import TabManager from "./Components/Tabs/TabManager";
+import { Background } from "./Components/Background";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="h-full w-[100%] pb-10">
+    <div className="font-cairo h-full w-full">
       <Background />
-      <div className="h-full grid grid-rows">
+      <div>
         <Acapnes />
-        <div id="projects">
-          <Projects />
+        <div id="main">
+          <TabManager />
         </div>
-        <Git />
       </div>
     </div>
   );
