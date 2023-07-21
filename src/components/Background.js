@@ -3,7 +3,7 @@ import React from "react";
 export const Background = () => {
   return (
     <video
-      // className="w-[100%] h-[100%] object-cover absolute top-0 left-0"
+      className="min-h-screen w-full h-full object-cover absolute top-0 left-0"
       src="./assets/bgloop.mp4"
       autoPlay
       loop

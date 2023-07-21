@@ -2,217 +2,83 @@
 import React from "react";
 
 const Projects = () => {
+  const ProjectsArray = [
+    {
+      title: "Anduril BOT",
+      desc: "Moderation & Music discord bot with Lord of The Rings themes.",
+      languages: ["JavaScript", "ES6"],
+      thumbnail: "./assets/discord_bot.png",
+    },
+    {
+      title: "Lost & Found App",
+      desc: "Mobile application where found items are saved and lost items are found.",
+      languages: ["Flutter", "PHP", "MSSQL"],
+      thumbnail: "./assets/lost_mj.png",
+    },
+    {
+      title: "Dieator",
+      desc: "Dieator creates personalized meal plans based on your body values and daily activities. Reach your diet and nutritional goals with our calorie calculator, weekly meal plans, grocery lists and more. Create your meal plan right here in seconds.",
+      languages: ["React", "TailwindCSS", "NestJS", "MongoDB"],
+      thumbnail: "./assets/dieator.png",
+    },
+    {
+      title: "File Transfer Service",
+      desc: "Extanted SQL management desktop application. Editing SQL tables with grid views.Get backup, scripts. Convert to SQLite format or edit.",
+      languages: ["NodeJS", "ExpressJS"],
+      thumbnail: "./assets/dashboard.jpg",
+    },
+  ];
+
+  const LanguageColors = {
+    JavaScript: "text-yellow-400",
+    ES6: "text-gray-300",
+    Flutter: "text-blue-400",
+    PHP: "text-purple-700",
+    MSSQL: "text-gray-200",
+    React: "text-blue-400",
+    TailwindCSS: "text-cyan-400",
+    NestJS: "text-red-400",
+    MongoDB: "text-green-400",
+    NodeJS: "text-green-500",
+    ExpressJS: "text-green-600",
+  };
+
   return (
     <div className="grid grid-cols-1">
-      <div className="w-full py-4 lg:px-10 md:px-5 grid grid-cols-1 xl:grid-cols-2 gap-10 place-items-center mb-8">
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
+      <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-10 place-items-center">
+        {ProjectsArray.map((Project, ProjectIndex) => (
           <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Anduril BOT</p>
-              <p>
-                Moderation & Music discord bot with Lord of The Rings themes.
+            <div className="flex flex-col justify-between space-y-1 text-lg bg-slate-800 bg-opacity-30 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
+              <p
+                className="font-bold text-3xl"
+                style={{
+                  textShadow: "2px 2px 0px #000, -2px -2px 0px purple",
+                }}
+              >
+                {Project.title}
               </p>
+              <p className="font-semibold">{Project.desc}</p>
               <div className="w-full flex flex-row justify-end space-x-1 font-semibold text-sm">
-                <p className="text-yellow-400">JavaScript</p>
-                <p className="text-gray-300">ES6</p>
+                {Project.languages.map((Language, LanguageIndex) => (
+                  <p
+                    className={`${LanguageColors[Language]}`}
+                    style={{
+                      textShadow: "2px 2px 0px #000, -2px -2px 0px purple",
+                    }}
+                  >
+                    {Language}
+                  </p>
+                ))}
               </div>
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="./assets/discord_bot.png"
+                src={Project.thumbnail}
                 className="w-[10rem] md:w-[12rem] object-cover md:rounded-r-sm"
               />
             </div>
           </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Lost & Found App</p>
-              <p>
-                Mobile application where found items are saved and lost items
-                are found.
-              </p>
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-blue-400 font-semibold">Flutter</p>
-                <p className="text-sm text-purple-700 font-semibold">PHP</p>
-                <p className="text-sm text-gray-300 font-semibold">MSSQL</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/lost_mj.png"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Dieator</p>
-              <p>
-                Dieator creates personalized meal plans based on your body
-                values and daily activities. Reach your diet and nutritional
-                goals with our calorie calculator, weekly meal plans, grocery
-                lists and more. Create your meal plan right here in seconds.
-              </p>
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-blue-400 font-semibold">React</p>
-                <p className="text-sm text-cyan-400 font-semibold">
-                  TailwindCSS
-                </p>
-                <p className="text-sm text-red-400 font-semibold">NestJS</p>
-                <p className="text-sm text-green-400 font-semibold">MongoDB</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/dieator.png"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Pictopia</p>
-              <div className="flex flex-col">
-                <p>
-                  Pictopia a social picture sharing platform are shared into
-                  categories.
-                </p>
-                <p>
-                  Share new pictures, save pictures you like, make comments
-                  them.
-                </p>
-              </div>
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-blue-400 font-semibold">React</p>
-                <p className="text-sm text-cyan-400 font-semibold">
-                  TailwindCSS
-                </p>
-                <p className="text-sm text-red-400 font-semibold">NestJS</p>
-                <p className="text-sm text-green-400 font-semibold">MongoDB</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/pictopia.png"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm bg-gray-200"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Carster</p>
-              <p>
-                A website where the features of cars are exhibited and sold.
-              </p>
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-orange-400 font-semibold">HTML </p>
-                <p className="text-sm text-purple-400 font-semibold">CSS </p>
-                <p className="text-sm text-yellow-400 font-semibold">
-                  JavaScript
-                </p>
-                <p className="text-sm text-purple-700 font-semibold">PHP</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/car_dealer.png"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">Lets Chat!</p>
-              <div className="flex flex-col">
-                <p>Take a selfie</p>
-                <p>Share with your friends what you are doing now!</p>
-                <p>Send photo,video,code or message to your friends!</p>
-              </div>
-              <div className="w-full flex flex-row justify-end space-x-1">
-                <p className="text-sm text-orange-400 font-semibold">HTML </p>
-                <p className="text-sm text-purple-400 font-semibold">CSS </p>
-                <p className="text-sm text-yellow-400 font-semibold">
-                  JavaScript
-                </p>
-                <p className="text-sm text-purple-700 font-semibold">PHP</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/chat_app.png"
-                className="w-[14rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row  justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">SQL Managemer</p>
-              <div className="flex flex-col">
-                <p>SQL extended management interface.</p>
-                <p>
-                  Creating, editing sql tables and outputs class, json formats.
-                </p>
-              </div>
-
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-blue-600 font-semibold">React </p>
-                <p className="text-sm text-purple-500 font-semibold">
-                  Bootstrap
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/transfer.png"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="group transform w-fit h-fit transition duration-500 px-10 py-4 hover:scale-110 flex flex-col items-center">
-          <div className="w-full flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
-            <div className="flex flex-col justify-center space-y-1 text-lg bg-slate-700 bg-opacity-40 w-full py-2 px-4 text-[1rem] font-light rounded-sm text-gray-300 text-center">
-              <p className="font-bold text-xl">File Transfer Service</p>
-              <div className="flex flex-col">
-                <p>Extanted SQL management desktop application.</p>
-                <p>
-                  Editing SQL tables with grid views.Get backup, scripts.
-                  Convert to SQLite format or edit.
-                </p>
-              </div>
-
-              <div className="w-full flex flex-row justify-end space-x-1 ">
-                <p className="text-sm text-green-500 font-semibold">NodeJS </p>
-                <p className="text-sm text-white font-semibold">ExpressJS </p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center ">
-              <img
-                src="./assets/dashboard.jpg"
-                className="w-[10rem] h-full object-cover md:rounded-r-sm"
-              />
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

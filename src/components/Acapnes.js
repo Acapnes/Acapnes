@@ -1,14 +1,61 @@
 import React from "react";
 import { Link } from "react-scroll";
+import About from "./Tabs/About";
 
 export const Acapnes = () => {
   return (
     <div className="h-full min-h-screen w-full grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 text-white p-10">
       <div className="w-full h-full flex flex-col justify-center items-center">
-        <div className="w-full flex flex-col items-center ">
-          <p className="text-[4.5rem] font-bold">Acapnes</p>
-          <p className="text-[2.5rem] text-center font-light">
+        <div className="w-full flex flex-col items-center text-center">
+          <p
+            className="text-[3.5rem] xl:text-[5.5rem] font-bold"
+            style={{
+              textShadow: "2px 2px 0px #000, -3px -3px 0px red",
+            }}
+          >
+            Acapnes
+          </p>
+          {/* <p className="text-[4.5rem] font-bold">Acapnes</p> */}
+          <p
+            className="text-[1.5rem] xl:text-[2.5rem] text-center pb-2"
+            style={{
+              textShadow: "2px 2px 0px #000, -3px -3px 0px teal",
+            }}
+          >
             Junior Full-Stack Developer
+          </p>
+          <div className="flex flex-row items-center space-x-2 pb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+            <p className="font-semibold text-[1.15rem] xl:text-xl">Turkey</p>
+          </div>
+          <p
+            className="font-semibold text-[1.15rem] xl:text-xl"
+            style={{
+              textShadow: "1px 1px 0px olive",
+            }}
+          >
+            Passionate Software Engineer with a strong background in Computer
+            Engineering. From a young age, I've been fascinated by technology
+            and have spent years honing my skills in various programming
+            languages, web development, and game development and database
+            management systems (MSSQL, MongoDB, PostgreSQL). I thrive on
+            challenging projects that push the boundaries of innovation and
+            creativity. My experience in building mobile apps, web applications,
+            and 3D games has given me a diverse set of skills to tackle complex
+            problems. Always eager to learn and explore new technologies, I take
+            pride in crafting efficient and impactful solutions. Outside of
+            coding, I enjoy graphic design and creating digital art. I'm excited
+            to continue my journey in the tech world, contributing to
+            cutting-edge projects that entertain and inspire people worldwide.
           </p>
         </div>
 
@@ -51,14 +98,14 @@ export const Acapnes = () => {
             </a>
             <a
               href="mailto:acapnes@gmail.com"
-              className="w-full px-6 py-2.5 relative rounded group overflow-hidden font-medium bg-purple-50 bg-opacity-90 text-purple-600 inline-block"
+              className="w-full px-6 py-2.5 relative rounded group overflow-hidden font-medium inline-block border-2 bg-red-500 bg-opacity-10"
             >
-              <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-purple-300 group-hover:h-full opacity-100"></span>
+              <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-gradient-to-r group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] group-hover:h-full opacity-100 "></span>
               <div className="relative h-full w-full flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
+                  width="36"
+                  height="36"
                   fill="currentColor"
                   class="bi bi-envelope-fill"
                   viewBox="0 0 16 16"
@@ -69,15 +116,6 @@ export const Acapnes = () => {
             </a>
           </div>
         </div>
-
-        <Link
-          to="main"
-          spy={true}
-          smooth={true}
-          className=" animate-bounce cursor-pointer"
-        >
-          <img src="./assets/arrowdown.svg" alt="arrowdown" />
-        </Link>
       </div>
       <div className="items-center flex justify-center">
         <img
